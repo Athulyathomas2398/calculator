@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div></div>
+   <div class="calculator">
+    <fieldset id="calculator">
+        <form name="calc" action="">
+            <input id="display" placeholder="0"  type="text"><br>
+    
+            <input id="seven" onclick="displayContent('7')" class="button digits" type="button" value="7">
+            <input id="eight" onclick="displayContent('8')" class="button digits" type="button" value="8">
+            <input id="nine" onclick="displayContent('9')" class="button digits" type="button" value="9">
+            <input id="plus" onclick="displayContent('+')" class="button mathbutton" type="button" value="+">
+            <input id="minus" onclick="displayContent('-')" class="button mathbutton" type="button" value="-">
+            
+            <br>
+    
+            <input id="four" onclick="displayContent('4')" class="button digits" type="button" value="4">
+            <input id="five" onclick="displayContent('5')" class="button digits" type="button" value="5">
+            <input id="six" onclick="displayContent('6')" class="button digits" type="button" value="6">
+            <input id="mul" onclick="displayContent('*')" class="button mathbutton" type="button" value="x">
+            <input id="div" onclick="displayContent('/')" class="button mathbutton" type="button" value="/">
+            
+            <br>
+    
+            <input id="one" onclick="displayContent('1')" class="button digits" type="button" value="1">
+            <input id="two" onclick="displayContent('2')" class="button digits" type="button" value="2">
+            <input id="three" onclick="displayContent('3')" class="button digits" type="button" value="3">
+            <input id="per" onclick="displayContent('%')" class="button mathbutton" type="button" value="%">
+            <input id="del" onclick="Remove()" class="button mathbutton" type="button" value="Del">
+           
+            <br>
+    
+           
+            <input id="zero" onclick="displayContent('0')" class="button digits" type="button" value="0">
+            <input id="dot" onclick="displayContent('.')" class="button digits" type="button" value=".">
+            <input id="d-zero" onclick="displayContent('00')" class="button digits" type="button" value="00">
+            <input id="equal" onclick="showResult()" class="button mathbutton" type="button" value="=">
+            <input id="clearbutton" onclick="clearAll()" type="button" value="C">
+           
+            <br>
+        </form>
+    </fieldset>
+   </div>
+    
+</body>
+<script src="./jsfile.js"></script>
+</html>
